@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mike's Auto Repair &amp; Services — The Honest Mechanic in Martinsburg, WV</title>
+<meta name="description" content="Honest, fair-priced auto repair in Martinsburg, WV. Diagnostics, brakes, engine, classic cars. Family-run, 4.9★ from 45 neighbors. Call (304) 579-7258.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pine:#16332E;
+  --pine-deep:#0E211D;
+  --pine-soft:#1E433C;
+  --cream:#F0E7D2;
+  --cream-dk:#E4D8BB;
+  --paper:#F7F1E2;
+  --rust:#C24A2C;
+  --rust-deep:#9D3A21;
+  --ochre:#D89A3A;
+  --ink:#221E18;
+  --ink-soft:#5C5446;
+  --line-cream:#D8CCAE;
+  --line-pine:#2C4F47;
+  --display:'Bricolage Grotesque',sans-serif;
+  --body:'Hanken Grotesk',sans-serif;
+  --mono:'Spline Sans Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--cream);font-size:17px;line-height:1.62}
+img{max-width:100%}
+a{color:inherit}
+::selection{background:var(--ochre);color:var(--ink)}
+:focus-visible{outline:3px solid var(--rust);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 26px}
+
+.eyebrow{font-family:var(--mono);font-weight:600;text-transform:uppercase;letter-spacing:.22em;font-size:12px;color:var(--rust)}
+h1,h2,h3{font-family:var(--display);line-height:1.02;letter-spacing:-.015em}
+h2{font-size:clamp(33px,4.6vw,52px);font-weight:800;margin:14px 0 16px}
+
+/* ---------- badge logo ---------- */
+.badge{display:block}
+.badge .ring-dash{opacity:.85}
+
+/* ---------- top bar ---------- */
+.topbar{background:var(--pine-deep);color:#A9BDB5;font-family:var(--mono);font-size:12px;letter-spacing:.04em}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;padding:9px 26px;gap:12px}
+.topbar a{color:var(--ochre);text-decoration:none}
+
+/* ---------- header ---------- */
+header{background:var(--pine);color:var(--cream);position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line-pine)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding:13px 26px;gap:16px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--cream)}
+.brand .badge{width:50px;height:50px;flex:none}
+.brand-type{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:21px;line-height:.92;letter-spacing:-.01em}
+.brand-type small{display:block;font-family:var(--mono);font-weight:500;font-size:10px;letter-spacing:.2em;color:var(--ochre);margin-top:4px}
+nav{display:flex;gap:30px;font-family:var(--body);font-weight:600;text-transform:uppercase;letter-spacing:.04em;font-size:14px}
+nav a{text-decoration:none;color:#B7C8C1;transition:color .12s}
+nav a:hover{color:var(--cream)}
+.btn{display:inline-flex;align-items:center;gap:9px;background:var(--rust);color:#fff;text-decoration:none;font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.01em;font-size:17px;padding:12px 20px;border-radius:6px;box-shadow:0 3px 0 var(--rust-deep);transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 4px 0 var(--rust-deep)}
+.btn svg{width:17px;height:17px;flex:none}
+
+/* ---------- hero ---------- */
+.hero{background:var(--pine);color:var(--cream);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-30%;right:-12%;width:620px;height:620px;border-radius:50%;
+  background:radial-gradient(circle,rgba(216,154,58,.10) 0%,transparent 62%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.08fr .92fr;gap:54px;align-items:center;padding:74px 26px 86px}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ochre);border:1px solid var(--line-pine);border-radius:999px;padding:7px 15px;margin-bottom:24px}
+.kicker .dot{width:7px;height:7px;border-radius:50%;background:var(--rust);box-shadow:0 0 0 3px rgba(194,74,44,.25)}
+.hero h1{font-size:clamp(42px,6.2vw,76px);font-weight:800;letter-spacing:-.025em;line-height:.98}
+.hero h1 em{font-style:normal;color:var(--ochre);position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.06em;height:.1em;background:var(--rust);border-radius:2px}
+.hero .lead{font-size:19px;color:#C4D2CC;max-width:44ch;margin:24px 0 32px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero .btn{font-size:19px;padding:14px 24px}
+.btn-ghost{display:inline-flex;align-items:center;gap:9px;border:1.5px solid #3A5C54;color:var(--cream);text-decoration:none;font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.01em;font-size:18px;padding:12.5px 22px;border-radius:6px;transition:border-color .12s,background .12s}
+.btn-ghost:hover{border-color:var(--ochre);background:rgba(216,154,58,.08)}
+.hero-sign{margin-top:34px;display:flex;align-items:center;gap:14px;font-family:var(--mono);font-size:12.5px;letter-spacing:.04em;color:#9DB0A9}
+.hero-sign .stars{color:var(--ochre);font-size:15px;letter-spacing:2px}
+.hero-sign .rule{flex:1;height:1px;background:var(--line-pine);max-width:60px}
+
+/* signature: work order ticket */
+.ticket-wrap{display:grid;place-items:center}
+.ticket{width:min(400px,100%);background:var(--paper);color:var(--ink);border-radius:3px;position:relative;
+  box-shadow:0 28px 56px rgba(0,0,0,.42);transform:rotate(1.5deg);font-family:var(--mono)}
+.ticket::before,.ticket::after{content:"";position:absolute;left:0;right:0;height:13px;
+  background-image:radial-gradient(circle at 8px 50%,transparent 0 5px,var(--paper) 5px);background-size:16px 13px;background-repeat:repeat-x}
+.ticket::before{top:-6px}.ticket::after{bottom:-6px;transform:scaleY(-1)}
+.tk-head{background:var(--pine);color:var(--paper);padding:13px 20px;display:flex;justify-content:space-between;align-items:center;border-radius:3px 3px 0 0}
+.tk-head .t{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:17px;letter-spacing:.02em}
+.tk-head .n{font-size:11px;color:var(--ochre);letter-spacing:.1em}
+.tk-meta{display:grid;grid-template-columns:1fr 1fr;gap:3px 18px;padding:15px 20px 8px;font-size:11px;letter-spacing:.05em;color:var(--ink-soft)}
+.tk-meta b{color:var(--ink);font-weight:700}
+.tk-rows{padding:4px 20px}
+.tk-row{display:grid;grid-template-columns:1fr auto;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line-cream);font-size:12.5px;align-items:center}
+.tk-row .amt{font-weight:700;white-space:nowrap}
+.tk-row.free .amt{color:#2C7A45}
+.tk-row .tag{display:inline-block;font-size:9px;font-weight:700;letter-spacing:.08em;padding:2px 6px;border-radius:3px;margin-left:7px;background:#DCEEDF;color:#2C7A45;white-space:nowrap}
+.tk-total{display:flex;justify-content:space-between;align-items:baseline;padding:15px 20px;background:var(--cream-dk);border-radius:0 0 3px 3px}
+.tk-total .lbl{font-size:10.5px;letter-spacing:.1em;color:var(--ink-soft);max-width:14ch}
+.tk-total .big{font-family:var(--display);font-size:30px;font-weight:800;color:var(--rust)}
+.tk-stamp{position:absolute;right:16px;bottom:70px;font-family:var(--display);font-weight:800;font-size:19px;text-transform:uppercase;letter-spacing:.03em;color:var(--rust);border:2.5px solid var(--rust);border-radius:6px;padding:3px 11px;transform:rotate(-12deg);opacity:.8}
+
+/* ---------- sections ---------- */
+section{padding:86px 0}
+.head{max-width:640px;margin-bottom:48px}
+.head .eyebrow{display:inline-block;margin-bottom:6px}
+.head p{color:var(--ink-soft)}
+
+/* service menu */
+.menu{background:var(--cream)}
+.menu-board{border-top:3px solid var(--ink)}
+.menu-row{display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--line-cream)}
+.menu-row .mr-no{font-family:var(--mono);font-size:12px;color:var(--rust);font-weight:600;letter-spacing:.05em}
+.menu-row .mr-name{font-family:var(--display);font-weight:700;font-size:clamp(21px,2.5vw,27px);text-transform:uppercase;letter-spacing:-.01em}
+.menu-row .mr-desc{font-size:15px;color:var(--ink-soft);max-width:46ch;justify-self:start;grid-column:2}
+.menu-row{grid-template-areas:"no name tag" "no desc desc"}
+.menu-row .mr-no{grid-area:no}
+.menu-row .mr-name{grid-area:name}
+.menu-row .mr-desc{grid-area:desc;margin-top:5px}
+.menu-row .mr-tag{grid-area:tag;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);align-self:center}
+.menu-row:hover .mr-name{color:var(--rust)}
+.menu-row .mr-name{transition:color .14s}
+
+/* honesty band */
+.promise{background:var(--rust);color:#fff;text-align:center}
+.promise .wrap{padding:66px 26px}
+.promise .eyebrow{color:#F6D8CC}
+.promise h2{color:#fff;max-width:20ch;margin:12px auto 14px}
+.promise p{max-width:52ch;margin:0 auto;color:#FBE4DC;font-size:18px}
+
+/* reviews */
+.reviews{background:var(--pine);color:var(--cream)}
+.reviews .head h2{color:var(--cream)}
+.reviews .head p{color:#9DB0A9}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rev{background:var(--pine-soft);border:1px solid var(--line-pine);border-radius:10px;padding:26px 24px;display:flex;flex-direction:column;gap:14px}
+.rev .stars{color:var(--ochre);letter-spacing:2px;font-size:15px}
+.rev p{font-size:15.5px;line-height:1.62;color:#DCE6E1}
+.rev .who{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:#8FA39C;margin-top:auto;text-transform:uppercase}
+.rev-foot{display:flex;align-items:center;gap:14px;margin-top:32px;font-family:var(--mono);font-size:13px;color:#9DB0A9;flex-wrap:wrap}
+.rev-foot b{font-family:var(--display);font-size:22px;color:var(--cream)}
+.rev-foot .stars{color:var(--ochre);letter-spacing:2px}
+
+/* about */
+.about{background:var(--cream)}
+.about .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}
+.about-badge{display:grid;place-items:center}
+.about-badge .badge{width:min(280px,80%);height:auto;filter:drop-shadow(0 16px 30px rgba(14,33,29,.28))}
+.about-points{list-style:none;margin-top:20px}
+.about-points li{padding:14px 0;border-bottom:1px solid var(--line-cream);display:flex;gap:14px;align-items:baseline;font-size:16.5px}
+.about-points li b{color:var(--ink)}
+.about-points li::before{content:"";flex:none;width:9px;height:9px;border-radius:50%;background:var(--rust);transform:translateY(4px)}
+
+/* info */
+.info{background:var(--pine-deep);color:#CBD8D2}
+.info .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:38px}
+.info .eyebrow{display:block;margin-bottom:8px;color:var(--ochre)}
+.info h3{font-family:var(--display);font-weight:700;text-transform:uppercase;font-size:19px;color:var(--cream);margin-bottom:12px;letter-spacing:-.01em}
+.info p,.info li{font-size:15px;color:#9DB0A9;line-height:1.75}
+.info ul{list-style:none}
+.info .mono{font-family:var(--mono);font-size:13.5px;letter-spacing:.02em;color:#BDCAC4}
+.info a{color:var(--ochre);text-decoration:none}
+
+/* foot cta */
+.foot-cta{background:var(--rust);color:#fff;text-align:center;padding:88px 0}
+.foot-cta h2{color:#fff;font-size:clamp(36px,5.4vw,60px)}
+.foot-cta p{color:#FBE4DC;max-width:48ch;margin:14px auto 28px;font-size:18px}
+.big-phone{font-family:var(--display);font-weight:800;font-size:clamp(34px,5vw,54px);color:#fff;text-decoration:none;display:inline-block;margin-bottom:24px;letter-spacing:-.02em}
+.big-phone:hover{color:var(--pine)}
+.foot-cta .btn{background:var(--pine);box-shadow:0 3px 0 var(--pine-deep)}
+.foot-cta .btn:hover{box-shadow:0 4px 0 var(--pine-deep)}
+
+footer.site{background:var(--pine-deep);color:#7E938B;font-family:var(--mono);font-size:12px;padding:24px 0;letter-spacing:.03em;border-top:1px solid var(--line-pine)}
+footer.site .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+/* sticky mobile call */
+.callbar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:90;background:var(--rust);box-shadow:0 -4px 16px rgba(0,0,0,.3)}
+.callbar a{display:flex;align-items:center;justify-content:center;gap:10px;color:#fff;text-decoration:none;font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:19px;padding:15px}
+.callbar svg{width:19px;height:19px}
+
+/* motion */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .55s ease,transform .55s ease}
+.reveal.in{opacity:1;transform:none}
+.hero .kicker,.hero h1,.hero .lead,.hero-ctas,.hero-sign{opacity:0;transform:translateY(15px);animation:rise .6s ease forwards}
+.hero h1{animation-delay:.06s}.hero .lead{animation-delay:.16s}.hero-ctas{animation-delay:.24s}.hero-sign{animation-delay:.32s}
+.ticket{opacity:0;animation:drop .65s cubic-bezier(.2,1.25,.4,1) .26s forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+@keyframes drop{0%{opacity:0;transform:rotate(1.5deg) translateY(-22px)}100%{opacity:1;transform:rotate(1.5deg) translateY(0)}}
+@media (prefers-reduced-motion:reduce){
+  .reveal,.hero .kicker,.hero h1,.hero .lead,.hero-ctas,.hero-sign,.ticket{animation:none;transition:none;opacity:1;transform:none}
+  .ticket{transform:rotate(1.5deg)}html{scroll-behavior:auto}
+}
+
+@media (max-width:960px){
+  .hero .wrap{grid-template-columns:1fr;padding-top:56px;padding-bottom:64px}
+  .ticket-wrap{order:-1}
+  .ticket{transform:rotate(0);max-width:380px}
+  @keyframes drop{0%{opacity:0;transform:translateY(-22px)}100%{opacity:1;transform:none}}
+  .rev-grid{grid-template-columns:1fr 1fr}
+  .about .wrap{grid-template-columns:1fr;gap:38px}
+  .about-badge{order:-1}
+  .about-badge .badge{width:200px}
+  .info .wrap{grid-template-columns:1fr 1fr}
+  nav{display:none}
+}
+@media (max-width:600px){
+  .rev-grid,.info .wrap{grid-template-columns:1fr}
+  .topbar{display:none}
+  header .btn{display:none}
+  .callbar{display:block}
+  body{padding-bottom:58px}
+  section{padding:62px 0}
+  .menu-row{grid-template-columns:auto 1fr;grid-template-areas:"no name" "desc desc"}
+  .menu-row .mr-tag{display:none}
+  .menu-row .mr-desc{grid-column:1/-1}
+  .tk-stamp{bottom:76px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>Weaver Ln · Martinsburg, WV 25404</span>
+    <span>Honest diagnosis &amp; fair prices — <a href="tel:+13045797258">(304) 579-7258</a></span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#">
+      <svg class="badge" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <path id="hArcTop" d="M 38 100 A 62 62 0 0 1 162 100"/>
+          <path id="hArcBot" d="M 42 100 A 58 58 0 0 0 158 100"/>
+        </defs>
+        <circle cx="100" cy="100" r="94" fill="#16332E" stroke="#D89A3A" stroke-width="3"/>
+        <circle class="ring-dash" cx="100" cy="100" r="84" fill="none" stroke="#D89A3A" stroke-width="1.5" stroke-dasharray="1.5 5.5" stroke-linecap="round"/>
+        <text font-family="Bricolage Grotesque" font-weight="800" font-size="17.5" letter-spacing="1.4" fill="#F0E7D2"><textPath href="#hArcTop" startOffset="50%" text-anchor="middle">MIKE'S AUTO REPAIR</textPath></text>
+        <text font-family="Spline Sans Mono" font-weight="600" font-size="10" letter-spacing="2" fill="#D89A3A"><textPath href="#hArcBot" startOffset="50%" text-anchor="middle">MARTINSBURG · WV</textPath></text>
+        <text x="45" y="105" font-family="Bricolage Grotesque" font-weight="800" font-size="15" fill="#D89A3A" text-anchor="middle">★</text>
+        <text x="155" y="105" font-family="Bricolage Grotesque" font-weight="800" font-size="15" fill="#D89A3A" text-anchor="middle">★</text>
+        <text x="100" y="98" font-family="Bricolage Grotesque" font-weight="800" font-size="50" fill="#F0E7D2" text-anchor="middle">M</text>
+        <line x1="73" y1="112" x2="127" y2="112" stroke="#C24A2C" stroke-width="3"/>
+        <text x="100" y="132" font-family="Spline Sans Mono" font-weight="600" font-size="11" letter-spacing="3.5" fill="#F0E7D2" text-anchor="middle">SERVICE</text>
+      </svg>
+      <span class="brand-type">Mike's Auto<small>Repair &amp; Services</small></span>
+    </a>
+    <nav aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">About</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn" href="tel:+13045797258">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
+      (304) 579-7258
+    </a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="kicker"><span class="dot"></span> Family-run on Weaver Lane</span>
+      <h1>The mechanic who actually tells you <em>the truth</em>.</h1>
+      <p class="lead">Honest diagnosis, fair prices, and the job done right the first time. From daily drivers to classic iron, Mike fixes what's broken — and tells you straight when something isn't.</p>
+      <div class="hero-ctas">
+        <a class="btn" href="tel:+13045797258">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
+          Get an Honest Quote
+        </a>
+        <a class="btn-ghost" href="#reviews">Read the Reviews</a>
+      </div>
+      <div class="hero-sign">
+        <span class="stars">★★★★★</span>
+        <span>4.9 from 45 neighbors on Google</span>
+        <span class="rule"></span>
+      </div>
+    </div>
+
+    <div class="ticket-wrap">
+      <div class="ticket" role="img" aria-label="Sample honest work order: three ball joints inspected, found not needed, charged zero dollars">
+        <div class="tk-head"><span class="t">Work Order</span><span class="n">NO. 4-5821</span></div>
+        <div class="tk-meta">
+          <span><b>VEHICLE</b> '09 Pickup</span>
+          <span><b>DATE</b> Today</span>
+          <span><b>TECH</b> Mike</span>
+          <span><b>STATUS</b> Ready</span>
+        </div>
+        <div class="tk-rows">
+          <div class="tk-row"><span>Diagnose front-end noise</span><span class="amt">incl.</span></div>
+          <div class="tk-row"><span>Replace 1× ball joint</span><span class="amt">$148.00</span></div>
+          <div class="tk-row free"><span>Other 3 ball joints<span class="tag">NOT NEEDED</span></span><span class="amt">$0.00</span></div>
+          <div class="tk-row"><span>Road test &amp; recheck</span><span class="amt">incl.</span></div>
+        </div>
+        <div class="tk-total"><span class="lbl">YOU PAY FOR WHAT YOU NEED</span><span class="big">$148.00</span></div>
+        <span class="tk-stamp">Honest</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="menu" id="services">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">The Service Board</span>
+      <h2>What we'll take care of</h2>
+      <p>Foreign and domestic, old and new. If it has wheels and an engine, bring it by — and if it's something we shouldn't touch, we'll point you the right way.</p>
+    </div>
+    <div class="menu-board reveal">
+      <div class="menu-row">
+        <span class="mr-no">01</span>
+        <span class="mr-name">Diagnostics</span>
+        <span class="mr-tag">Check first, quote second</span>
+        <span class="mr-desc">Check-engine lights, mystery noises, weird smells — we find the real cause before quoting a dime.</span>
+      </div>
+      <div class="menu-row">
+        <span class="mr-no">02</span>
+        <span class="mr-name">Brakes &amp; Suspension</span>
+        <span class="mr-tag">Pads · rotors · ball joints</span>
+        <span class="mr-desc">Stopping and steering done safe. We only replace what's actually worn — and prove it to you.</span>
+      </div>
+      <div class="menu-row">
+        <span class="mr-no">03</span>
+        <span class="mr-name">Engine &amp; Misfires</span>
+        <span class="mr-tag">Tune-ups · timing</span>
+        <span class="mr-desc">Cylinder misfires, tune-ups, and the deeper engine work most shops would rather hand off.</span>
+      </div>
+      <div class="menu-row">
+        <span class="mr-no">04</span>
+        <span class="mr-name">Routine Maintenance</span>
+        <span class="mr-tag">Oil · fluids · inspections</span>
+        <span class="mr-desc">The upkeep that keeps small problems from turning into big bills down the road.</span>
+      </div>
+      <div class="menu-row">
+        <span class="mr-no">05</span>
+        <span class="mr-name">Classic &amp; Custom</span>
+        <span class="mr-tag">Trusted with the good stuff</span>
+        <span class="mr-desc">From a work truck to a '67 Belvedere — we treat your project like it's parked in our own garage.</span>
+      </div>
+      <div class="menu-row">
+        <span class="mr-no">06</span>
+        <span class="mr-name">Stranded On a Trip?</span>
+        <span class="mr-tag">Call ahead</span>
+        <span class="mr-desc">Brakes failed mid-drive? We've gotten plenty of travelers back on the highway the same day.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="promise">
+  <div class="wrap reveal">
+    <span class="eyebrow">The Mike's Promise</span>
+    <h2>We don't sell repairs you don't need.</h2>
+    <p>Most shops would happily do the extra work and charge you for it. We check, we tell you the truth, and we fix only what's broken. That's the whole reason folks keep coming back — and bring their families with them.</p>
+  </div>
+</div>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Straight From the Neighbors</span>
+      <h2>Why people switch to Mike's</h2>
+    </div>
+    <div class="rev-grid">
+      <article class="rev reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>Dropped my truck off for a ball joint. Mike checked the others, found they were fine, and didn't replace them. Most places would've charged me anyway. Finally found a mechanic I trust.</p><span class="who">Truck owner · Martinsburg</span></article>
+      <article class="rev reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>Brakes failed on a road trip. Mike, his mechanic, and his wife had me in and out in an hour. Good service, good price, good people — got me right back on the road.</p><span class="who">Traveler passing through</span></article>
+      <article class="rev reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>Cylinder misfire diagnosed and repaired fast. Fair and hard-working. This is where I'm taking every vehicle from now on.</p><span class="who">Repeat customer</span></article>
+      <article class="rev reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>Very knowledgeable and fairly priced. My only regret is not finding him sooner. My whole family takes their cars here now.</p><span class="who">Longtime customer</span></article>
+      <article class="rev reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>The only person I'll let touch my '67 Belvedere. Reasonable, timely, and does great work. I send all my friends to him.</p><span class="who">Classic car owner</span></article>
+      <article class="rev reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>Honest mechanics are rare. Mike looked at my truck, told me exactly what it needed, and didn't pad the bill. That's everything.</p><span class="who">Martinsburg local</span></article>
+    </div>
+    <div class="rev-foot reveal"><b>4.9</b><span class="stars">★★★★★</span><span>· averaged across 45 Google reviews</span></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="about-badge reveal">
+      <svg class="badge" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mike's Auto Repair service badge">
+        <defs>
+          <path id="aArcTop" d="M 38 100 A 62 62 0 0 1 162 100"/>
+          <path id="aArcBot" d="M 42 100 A 58 58 0 0 0 158 100"/>
+        </defs>
+        <circle cx="100" cy="100" r="94" fill="#16332E" stroke="#D89A3A" stroke-width="3"/>
+        <circle class="ring-dash" cx="100" cy="100" r="84" fill="none" stroke="#D89A3A" stroke-width="1.5" stroke-dasharray="1.5 5.5" stroke-linecap="round"/>
+        <text font-family="Bricolage Grotesque" font-weight="800" font-size="17.5" letter-spacing="1.4" fill="#F0E7D2"><textPath href="#aArcTop" startOffset="50%" text-anchor="middle">MIKE'S AUTO REPAIR</textPath></text>
+        <text font-family="Spline Sans Mono" font-weight="600" font-size="10" letter-spacing="2" fill="#D89A3A"><textPath href="#aArcBot" startOffset="50%" text-anchor="middle">MARTINSBURG · WV</textPath></text>
+        <text x="45" y="105" font-family="Bricolage Grotesque" font-weight="800" font-size="15" fill="#D89A3A" text-anchor="middle">★</text>
+        <text x="155" y="105" font-family="Bricolage Grotesque" font-weight="800" font-size="15" fill="#D89A3A" text-anchor="middle">★</text>
+        <text x="100" y="98" font-family="Bricolage Grotesque" font-weight="800" font-size="50" fill="#F0E7D2" text-anchor="middle">M</text>
+        <line x1="73" y1="112" x2="127" y2="112" stroke="#C24A2C" stroke-width="3"/>
+        <text x="100" y="132" font-family="Spline Sans Mono" font-weight="600" font-size="11" letter-spacing="3.5" fill="#F0E7D2" text-anchor="middle">SERVICE</text>
+      </svg>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Who You're Dealing With</span>
+      <h2>A real shop. Real people.</h2>
+      <p style="color:var(--ink-soft);max-width:50ch">Mike's Auto Repair &amp; Services is family-run on Weaver Lane — Mike, his mechanic, and his wife. No corporate service desk, no upsell scripts. Just straight answers and honest work, the way it used to be done.</p>
+      <ul class="about-points">
+        <li><span>You talk to the person actually <b>fixing your car</b></span></li>
+        <li><span>We quote the <b>real problem</b>, never a padded estimate</span></li>
+        <li><span>Fair, up-front pricing — <b>no surprises</b> on the bill</span></li>
+        <li><span>Daily drivers, work trucks, and <b>classics</b> all welcome</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="info" id="visit">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Find Us</span>
+      <h3>Location</h3>
+      <p class="mono">Weaver Ln<br>Martinsburg, WV 25404</p>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Hours</span>
+      <h3>When We're Open</h3>
+      <ul class="mono">
+        <li>Mon – Fri &nbsp;·&nbsp; By appointment</li>
+        <li>Saturday &nbsp;·&nbsp; Call ahead</li>
+        <li>Sunday &nbsp;·&nbsp; Closed</li>
+      </ul>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Get a Quote</span>
+      <h3>Call or Text Mike</h3>
+      <p>Fastest way to an honest answer is to call. Tell us what it's doing and we'll tell you straight.</p>
+      <p class="mono"><a href="tel:+13045797258">(304) 579-7258</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="foot-cta">
+  <div class="wrap reveal">
+    <span class="eyebrow" style="color:#F6D8CC">No-Pressure Estimates</span>
+    <h2>Car making a noise?</h2>
+    <p>Call Mike and describe what's going on. You'll get an honest answer — even if the honest answer is that it's nothing to worry about.</p>
+    <a class="big-phone" href="tel:+13045797258">(304) 579-7258</a><br>
+    <a class="btn" href="tel:+13045797258">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
+      Call for an Estimate
+    </a>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 Mike's Auto Repair &amp; Services · Weaver Ln, Martinsburg, WV 25404</span>
+    <span>(304) 579-7258 · 4.9★ on Google</span>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a href="tel:+13045797258">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
+    Tap to Call — (304) 579-7258
+  </a>
+</div>
+
+<script>
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
+</body>
+</html>
